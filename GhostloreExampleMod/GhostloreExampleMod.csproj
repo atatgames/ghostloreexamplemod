@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>    
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="GameDifficultyInfo.xml" />
+    <None Remove="modinfo.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ModInfo.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\reference\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Ghostlore">
+      <HintPath>..\reference\Ghostlore.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\reference\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\reference\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\reference\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\reference\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\reference\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Creatures.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="screenshot.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="mkdir &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;&#xD;&#xA;del &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)\$(TargetFileName)&quot;&#xD;&#xA;xcopy /y &quot;$(TargetPath)&quot; &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;&#xD;&#xA;xcopy /y &quot;$(TargetDir)ModInfo.xml&quot; &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;&#xD;&#xA;xcopy /y &quot;$(TargetDir)Creatures.csv&quot; &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;&#xD;&#xA;xcopy /y &quot;$(TargetDir)screenshot.png&quot; &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;" />
+  </Target>
+
+</Project>

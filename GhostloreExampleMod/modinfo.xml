@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Your mod's name and description. Must be included in your mod's folder.
+Mods must be placed in a folder inside C:\Users\(your name)\AppData\LocalLow\ATATGames\Ghostlore\mods\(your mod's name).
+-->
+<ModInfo>
+  <name>Test Mod</name>
+  <description>Test mod description</description>
+</ModInfo>
