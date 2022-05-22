@@ -1,6 +1,8 @@
 # ModInfo.xml
 This must be included in every mod with name and description tags. Place it, and any other files inside %userprofile%\appdata\locallow\ATATGames\Ghostlore\mods\\(your mod name) folder. Mods can include any combination of the options below. You may include an image file named screenshot.jpg/png inside to be used as the steam workshop preview image. You should then see your mod inside the mods panel when you run Ghostlore. Use that to upload your mod to the Steam workshop when you are happy with your mod.
 
+The example mod uses visual studio build events to automatically copy any files set to Copy to build directory in the "Mod Folder" directory to the mod folder with the same solution name. However you do not need to use visual studio at all if your mod only has non-code changes.
+
 # Changes to Code
 To get this visual studio solution working, you will need to add references to the dlls you need inside (your steam folder)\steamapps\common\Ghostlore\Ghostlore_Data\Managed.
 Assembly-CSharp.dll, and the UnityEngine dlls of choice. For further guidance there are many guides and communities on the internet covering other Unity games such as Cities Skylines. Most of the methods used should be the same for Ghostlore.
