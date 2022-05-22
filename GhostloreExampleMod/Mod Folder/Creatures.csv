@@ -1,0 +1,6 @@
+Creature,,,,,,,,,,,,,,,,,,,StatInstance: Creature.BaseStats,,,,,,,
+Creature Name,Attributes,Innate Skills,Innate Status Effects,Spot Distance,Flee Chance,After Attack Delay,Aggressiveness,Max Distance From Spawn Position,Min Group Size,Max Group Size,Default Material,Tags,On Hit Sound,Death Sound,Loot Table,Base Creature,Variant,Animation Controller,Stat,Lower Value,Upper Value,BonusPerLevel,,,,
+Example Creature,,Guikia Dashing Strike,,2.3,0.8,1,0.7,0,5,9,,Monster,event:/Enemies/Guikia_Hit,event:/Enemies/Guikia_Die,Basic,Guikia,0,Example Creature,Max HP,45,0,16,,,845,
+,,,,,,,,,,,,,,,,,,Movement Speed,1.5,0,0,,,,
+,,,,,,,,,,,,,,,,,,Attack Damage,16,20,9,,,466,
+,,,,,,,,,,,,,,,,,,Avoidance,0.2,0,0.005,,,0.45,2.2

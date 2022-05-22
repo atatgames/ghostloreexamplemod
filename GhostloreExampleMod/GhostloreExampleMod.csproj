@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <None Remove="GameDifficultyInfo.xml" />
-    <None Remove="modinfo.xml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,16 +40,37 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Creatures.csv">
+    <None Update="Mod Folder\CreatureAnimationControllers.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="screenshot.png">
+    <None Update="Mod Folder\Creatures.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Mod Folder\Fmod Banks\Example Mod Bank.bank">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Mod Folder\Fmod Banks\Example Mod Bank.strings.bank">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Mod Folder\GameLocations.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Mod Folder\Powers.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Mod Folder\screenshot.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Mod Folder\Sprites\examplecreature.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Mod Folder\Sprites\examplepower.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="mkdir &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;&#xD;&#xA;del &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)\$(TargetFileName)&quot;&#xD;&#xA;xcopy /y &quot;$(TargetPath)&quot; &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;&#xD;&#xA;xcopy /y &quot;$(TargetDir)ModInfo.xml&quot; &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;&#xD;&#xA;xcopy /y &quot;$(TargetDir)Creatures.csv&quot; &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;&#xD;&#xA;xcopy /y &quot;$(TargetDir)screenshot.png&quot; &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;" />
+    <Exec Command="mkdir &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;&#xD;&#xA;del &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)\$(TargetFileName)&quot;&#xD;&#xA;xcopy /y &quot;$(TargetPath)&quot; &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;&#xD;&#xA;xcopy /y /d &quot;$(TargetDir)ModInfo.xml&quot; &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;&#xD;&#xA;xcopy  /Y /I /E &quot;$(TargetDir)Mod Folder\*.*&quot; &quot;%25userprofile%25\appdata\locallow\ATATGames\Ghostlore\mods\$(SolutionName)&quot;" />
   </Target>
 
 </Project>

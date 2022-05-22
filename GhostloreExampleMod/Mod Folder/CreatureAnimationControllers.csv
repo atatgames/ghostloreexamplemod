@@ -1,0 +1,10 @@
+CreatureAnimationController,CreatureAnimationClip: CreatureAnimationController.clips,,,,CreatureAudioEvent: CreatureAnimationClip.AudioEvents,
+Animation Name,Action,Duration Seconds,Sprites,Attributes,SoundFX,Frame
+Example Creature,Idle,2.6667,"/sprites/examplecreature_0,/sprites/examplecreature_1,/sprites/examplecreature_2,/sprites/examplecreature_3,/sprites/examplecreature_3,/sprites/examplecreature_2,/sprites/examplecreature_1,/sprites/examplecreature_0",Loop,,
+,Run,0.4444,"/sprites/examplecreature_12,/sprites/examplecreature_13,/sprites/examplecreature_14,/sprites/examplecreature_15,/sprites/examplecreature_16,/sprites/examplecreature_17,/sprites/examplecreature_18,/sprites/examplecreature_19","MultiplyByMovementSpeed, Loop",,
+,Telegraph,0.0833,/sprites/examplecreature_21,"MultiplyByAnimationSpeed, Loop",,
+,Charge,0.6667,"/sprites/examplecreature_4,/sprites/examplecreature_5,/sprites/examplecreature_6,/sprites/examplecreature_7,/sprites/examplecreature_8,/sprites/examplecreature_9,/sprites/examplecreature_10,/sprites/examplecreature_11","MultiplyByAnimationSpeed, Loop",,
+,Cast,0.6667,"/sprites/examplecreature_4,/sprites/examplecreature_5,/sprites/examplecreature_6,/sprites/examplecreature_7,/sprites/examplecreature_8,/sprites/examplecreature_9,/sprites/examplecreature_10,/sprites/examplecreature_11","MultiplyByAnimationSpeed, Loop",,
+,Hit,0.15,"/sprites/examplecreature_22,/sprites/examplecreature_22",Loop,,
+,Die,0.0833,/sprites/examplecreature_21,Loop,,
+,CritDie,0.0833,/sprites/examplecreature_21,Loop,,

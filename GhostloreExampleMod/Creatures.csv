@@ -1,8 +1,0 @@
-Creature,,,,,,,,,,,,,,,,StatInstance: Creature.BaseStats,,,,,,,,,,,,,,,,,,,
-Creature Name,Attributes,Innate Skills,Innate Status Effects,Spot Distance,Flee Chance,After Attack Delay,Aggressiveness,Max Distance From Spawn Position,Min Group Size,Max Group Size,Default Material,Tags,On Hit Sound,Death Sound,Loot Table,Stat,Lower Value,Upper Value,BonusPerLevel,,,,,,,,,,,,,,,,
-Player,PlayerCharacter,,,3,0,,,,1,1,,,,,,HP Regen,5,,0.3,,,20,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,Accuracy,0.1,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,Movement Speed,1.4,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,Max HP,5000,,25,,,1750,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,Max MP,300,,10,,,800,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,Critical Hit Chance,0.03,,,,,,,,,,,,,,,,,,

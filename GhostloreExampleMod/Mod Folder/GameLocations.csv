@@ -1,0 +1,5 @@
+GameLocation,,,,,,,,MapCreatureSpawn: GameLocation.creatures,,,
+Game Location Name,Attributes,Scene Name,Background Music,Ambient Music,Max Objectives,Starting Level,Quest Requirement,Creature,Creature Category,Total Creatures,
+Intro Island,"HellLevel, NoLights",Intro Island,event:/Music/burning_theme,event:/Music/burning_ambient,1,1,,Example Creature,0,7,
+,,,,,,,,Jiang Shi,0,7,
+,,,,,,,,Ergui,0,5,
