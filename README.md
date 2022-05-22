@@ -16,10 +16,10 @@ You can include custom spritesheets by including .png files in the mod folder. T
 
 The "Target Path" setting for each sprite is the path used to reference the sprite in the CSVs. You can set this to the path of a sprite from the base game to overwrite that sprite easily. The examplepower sprite included in this example mod replaces the arrow projectile this way.
 
-#New Projectiles and Creatures
+# New Projectiles and Creatures
 When creating new projectiles and creatures be sure to set the "Base Projectile" and "Base Creature" parameters to an entry from the base game. This is required as some components like lights on projectiles are not changeable by CSV file (and have to be changed by code). These settings are just copied from the base creature or projectile choosen. To change creature sprites you need to reference a new "Creature Animation Controller". You can refer to the "Example Creature" entry included in this mod.
 
-#Importing Audio
+# Importing Audio
 To include custom sound files you need to download FMOD 2.1 for free. You must use the included FMOD project file in this mod, after you have used FMOD to build your .bank files, copy it to the mod folder. You should then be able to reference your sounds from the CSV files. You can refer to the arrow projectile in this mod which has a custom sound.
 
 # Saving Data
